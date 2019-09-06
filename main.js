@@ -19,8 +19,8 @@ const serverStats = {
 var cpu = os.loadavg();
 var bot = new Discord.Client();
 var prefix = ("r!");
-
-bot.login("NjE2NzQxNDcxMTIyNDg5MzQ0.XWg_jg.FeuZAw1_y6B8rTiBS-O6OJuG1aA")
+var token = process.env.TOKEN
+bot.login(token)
 bot.on('ready', () => {
     bot.user.setActivity("Nyan, nyuh, nya ! :3 [r!help]", {type: "WATCHING"});
       console.log('Je suis prête ~');
