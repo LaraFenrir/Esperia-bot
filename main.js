@@ -4,6 +4,7 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('database.json');
 const storeadapter = new FileSync('store.json');
 const db = low(adapter);
+var token = process.env.TOKEN
 const storedb = low(storeadapter);
 const superagent = require("superagent")
 const cuteapi = require("cuteapi")
@@ -19,7 +20,7 @@ const serverStats = {
 var cpu = os.loadavg();
 var bot = new Discord.Client();
 var prefix = ("r!");
-var token = process.env.TOKEN
+
 bot.login(token)
 bot.on('ready', () => {
     bot.user.setActivity("Nyan, nyuh, nya ! :3 [r!help]", {type: "WATCHING"});
