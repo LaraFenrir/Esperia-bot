@@ -10,10 +10,10 @@ const superagent = require("superagent")
 const cuteapi = require("cuteapi")
 const os = require('os');
 const serverStats = {
-  guildID: '570581851509620737',
-  totalUsersID: '619526500491722763',
-  memberCountID: '619526520020664331',
-  botCountID: '619526541889634314'
+  guildID: '622819102381309953',
+  totalUsersID: '623456844475531276',
+  memberCountID: '623456863471534090',
+  botCountID: '623456879565078538'
 };
 
 
@@ -353,7 +353,7 @@ if (message.content.startsWith( prefix + "roi")) {
   
   var dev = new Discord.RichEmbed()
   .setTitle(`Salut à toi, ${message.author.username}`)
-  .addField("Si tu lis ceci c'est pour en savoir plus sur mon développeur. Je vais tout te dire.", "Son pseudo discord est 𝓢𝓒𝓟 𝓞𝓷𝒆 𝓩𝒆𝓻𝓸 𝓢𝓲𝔁#0106. Il est développeur depuis longtemps déjà. Il as déjà créée (avant de me créer moi) un bot musique, qui dois sans doutes être présent actuellement sur le serveur ou tu te situe (dans le cas contraire, désolée :/) essaie donc de faire '+help music' tu verras !")
+  .addField("Si tu lis ceci c'est pour en savoir plus sur mon développeur. Je vais tout te dire.", "Son pseudo discord est 𝕷𝖆𝖗𝖆 𝕱𝖊𝖓𝖗𝖎𝖗#0106. Il est développeur depuis longtemps déjà. Spécialisé dans le JavaScript, i lest aussi trés agile avec Python")
   .addField("Que dire de plus..", "Ah si ! Il te remercie de m'avoir ajoutée sur ce serveur ! Car même si il n'est pas co, je sauvegarde toutes intéractions avec moi même ou les autres bots de Lara, ce qui fait qu'il les voies. Donc, merci ! ❤")
   .setImage('https://cdn.discordapp.com/attachments/511554588738846720/522212606577082370/1312931744.jpg')
   .setThumbnail("https://cdn.discordapp.com/attachments/511554588738846720/522212793299238923/nekoGirl_1.jpg")
