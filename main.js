@@ -41,7 +41,7 @@ bot.on("guildMemberAdd", member => {
     bot.channels.get(serverStats.totalUsersID).setName(`Nombre d'utilisateur(s): ${member.guild.memberCount}`)
     bot.channels.get(serverStats.memberCountID).setName(`Nombre de membre(s): ${member.guild.members.filter(m => !m.user.bot).size}`)
     bot.channels.get(serverStats.botCountID).setName(`Nombre de bot(s): ${member.guild.members.filter(m => m.user.bot).size}`)
-    member.guild.channels.find("id", "641386383629484037).send(`:scream_cat:  Niioonn, **${member.user.username}** est parti(e) pourquoii ! '-' `)
+    member.guild.channels.find("id", "641386383629484037").send(`:scream_cat:  Niioonn, **${member.user.username}** est parti(e) pourquoii ! '-' `)
   })
 
   bot.on('message', async message => {
