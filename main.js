@@ -10,10 +10,10 @@ const superagent = require("superagent")
 const cuteapi = require("cuteapi")
 const os = require('os');
 const serverStats = {
-  guildID: '622819102381309953',
-  totalUsersID: '623456844475531276',
-  memberCountID: '623456863471534090',
-  botCountID: '623456879565078538'
+  guildID: '631557803005181963',
+  totalUsersID: '641385174508109885',
+  memberCountID: '641385192958984253',
+  botCountID: '641385211023851530'
 };
 
 
