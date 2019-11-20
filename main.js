@@ -20,7 +20,7 @@ const serverStats = {
 var cpu = os.loadavg();
 var bot = new Discord.Client();
 var prefix = ("r!");
-
+var role = member.guild.roles.find('name', 'membres guilde');
 bot.login(token)
 bot.on('ready', () => {
     bot.user.setActivity("Nyan, nyuh, nya ! :3 [r!help]", {type: "WATCHING"});
@@ -32,8 +32,7 @@ bot.on("guildMemberAdd", member => {
     bot.channels.get(serverStats.memberCountID).setName(`Nombre de membre(s): ${member.guild.members.filter(m => !m.user.bot).size}`)
     bot.channels.get(serverStats.botCountID).setName(`Nombre de bot(s): ${member.guild.members.filter(m => m.user.bot).size}`)
     member.guild.channels.find("id", "641386383629484037").send(`:heart_eyes_cat:  Oh, un nouveau(velle) est arrivé(e) ! Trop bien ! Reste avec nous aussi longtemps que tu le voudras **${member.user.username}** :3 *ronron*`)
-   var role = member.guild.roles.find('name', 'membres guilde');
-   member.addRole(role);
+	member.addRole(role);
   })
 
   
