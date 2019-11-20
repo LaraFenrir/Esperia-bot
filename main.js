@@ -20,13 +20,14 @@ const serverStats = {
 var cpu = os.loadavg();
 var bot = new Discord.Client();
 var prefix = ("r!");
-var role = member.guild.roles.find('name', 'membres guilde');
+
 bot.login(token)
 bot.on('ready', () => {
     bot.user.setActivity("Nyan, nyuh, nya ! :3 [r!help]", {type: "WATCHING"});
       console.log('Je suis prête ~');
   });
 bot.on("guildMemberAdd", member => {
+var role = member.guild.roles.find('name', 'Membres-guilde');
     if (member.guild.id !== serverStats.guildID) return; 
     bot.channels.get(serverStats.totalUsersID).setName(`Nombre d'utilisateur(s): ${member.guild.memberCount}`)
     bot.channels.get(serverStats.memberCountID).setName(`Nombre de membre(s): ${member.guild.members.filter(m => !m.user.bot).size}`)
